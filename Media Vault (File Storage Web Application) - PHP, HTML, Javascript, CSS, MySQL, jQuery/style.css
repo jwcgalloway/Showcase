@@ -1,0 +1,158 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Main content
+ */
+
+#messageFooter {
+    position: absolute;
+    bottom: 0;
+}
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.navbar-inverse .navbar-brand {
+	color:green;
+}
+
+.list-group {
+	float: right;
+	width: 29%;
+	margin: 0% 1%;
+}
+
+.list-group-item {
+	color:grey;
+	text-shadow: none;
+}
+
+.list-group-item button {
+	background: transparent;
+    border: none !important;
+}
+
+.list-group:after {
+	clear:both;
+	content:"";
+	display:table;
+}
+
+
+.panel {
+	clear:both;
+	content:"";
+	display:table;
+	float: right;
+	width: 29%;
+	margin: 0% 1%;
+}
+
+.panel-body {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	clear:both;
+	content:"";
+	display:btn;
+}
+
+/* .btn .btn-default .dropdown {
+	display: inline-block;
+	margin: 1%;
+	float:left;
+	width: 100%;
+	clear:both;
+	content:"";
+	display:btn;
+} */
+
+.btn {
+	display: inline-block;
+	margin: 1%;
+	float:left;
+	width: 100%;
+	clear:both;
+	content:"";
+	display:btn;
+} 
+
+.table-hover thead th {
+    width: 10%;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #C6FBDC;
+}
+
+
+.table-hover td.active {
+	background-color: #CCFF99;
+}
+
+.dirHref {
+    display: block;
+    color: inherit;
+}
+
+.selectedFile {
+    background-color: #CCFF99;
+}
+
+li {
+    padding: 5px;
+}
+
+#moveToList input {
+    background-color: white;
+    border: none;
+    width: 100%;
+}
+
+#moveToList input:hover{
+     background-color: lightgray;
+}
+
+<!-- UPLOAD -->
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
